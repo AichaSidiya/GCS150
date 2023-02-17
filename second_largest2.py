@@ -10,11 +10,13 @@ if list[0]>list[1]:
 else:
     largest=list[1]
     second_largest=list[0]
-for i in range(3,n):
+i=3
+while i<=n:
     if list[i]>largest:
         second_largest=largest
         largest=list[i]
-    elif list[i]>second_largest:
+    if list[i]>second_largest:
         second_largest=list[i]
+
 
 print('The largest number is:', largest,'The second largest is:', second_largest)
